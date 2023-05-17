@@ -9,6 +9,6 @@ class NavigationController extends GetxController {
   animateToPage(int page) {
     indexPage(page);
     pageController.value.animateToPage(page,
-        duration: Duration(milliseconds: 300), curve: Curves.easeIn);
+        duration: const Duration(milliseconds: 300), curve: Curves.easeIn);
   }
 }

@@ -17,7 +17,6 @@ class FavoriteController extends GetxController {
 
   asyncInit() async {
     favoriteIds = (await FavoriteStorage().getFavorites()).obs;
-    print(favoriteIds.length);
   }
 
   getElements() {
@@ -57,9 +56,7 @@ class FavoriteController extends GetxController {
   addFavorite(int id) {
     if (!exist(id)) {
       favoriteIds.add(id);
-
       searchNewProduct(id);
-
       FavoriteStorage().setFavorites(favoriteIds);
     }
   }

@@ -68,4 +68,8 @@ class ProductsController extends GetxController {
       isLoadingBestSoldProducts(false);
     }
   }
+
+  searchProduct(String str) async {
+    
+  }
 }
